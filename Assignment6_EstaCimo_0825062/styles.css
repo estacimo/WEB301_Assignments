@@ -1,0 +1,93 @@
+/***********
+Website name: Form
+Website Author: Esta Cimo
+
+Table of contents:
+1. Body styles
+2. Header styles
+3. Form styles
+
+Colour guide:
+Burgundy - #351d28
+Brown - #54423f
+White - #ffffff
+***********/
+
+/* Reset */
+* {
+	margin: 0;
+	padding: 0;
+}
+
+/* Body Styles */
+html, input[type="submit"] {
+	font-family: "Times New Roman";
+}
+
+body {
+	background-color: #351d28;
+	color: #fff;
+}
+
+/* Header Styles */
+header {
+	font-size: 3em;
+	text-align: center;
+	margin: 10px 0 10px;
+}
+
+/* Form Styles */ 
+fieldset {
+	padding: 20px;
+	display: flex;
+	flex-direction: column;
+}
+
+div {
+	padding-top: 10px;
+}
+
+label, p {
+	padding-bottom: 10px;
+	font-size: 1.5em;
+}
+
+input {
+	font-size: 1.5em;
+}
+
+@media screen and (min-width: 601px) {
+	body {
+		background-color:#54423f;
+	}
+
+	fieldset {
+		display: flex;
+		flex-direction: row;
+		justify-content: space-around;
+	}
+
+	input {
+		font-size: 1em;
+	}
+
+	label {
+		padding-right: 10px;
+		padding-bottom: 0px;
+		font-size: 1em;
+	}
+
+	p {
+		padding-right: 10px;
+		font-size: 1em;
+	}
+
+	div {
+		padding-top: 0px;
+	}
+
+	input[type="submit"] {
+		padding: 5px;
+		font-size: 1em;
+	}
+}
