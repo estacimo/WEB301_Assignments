@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+ <head>
+    <meta charset="UTF-8" >
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HopNShop</title>
+    
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
+	<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js" integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+" crossorigin="anonymous"></script>
+	
+	<style>
+		img {
+			height: 300px; 
+			object-fit: cover; 
+		}
+		
+    </style>
+ </head>
+ 
+ <body>
+   <header>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+			<div class="container-fluid">
+                
+				<a href="#" class="navbar-brand">HopNShop</a>
+				
+				<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+					<span class="navbar-toggler-icon"></span>
+				</button>
+				
+				<div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                        <ul class="navbar-nav">
+                            <li class="nav-item">
+                                <a class="nav-link" href="#Home">Home</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#About">About</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#Contact">Contact</a>
+                            </li> 
+							
+							<!-- Dropdown -->
+							<li class="dropdown mx-lg-3">
+								<button class="btn btn-light dropdown-toggle" type="button" id="dropdownMenuButton"data-bs-toggle="dropdown" aria-expanded="false">
+									Catalogue
+								</button>
+								<ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+									<li><a class="dropdown-item" href="#">Trending</a></li>
+									<li><a class="dropdown-item" href="#">Shirts</a></li>
+									<li><a class="dropdown-item" href="#">Jeans</a></li>
+									<li><a class="dropdown-item" href="#">Dresses</a></li>
+									<li><a class="dropdown-item" href="#">Shoes</a></li>
+								</ul>
+							</li>
+							
+							<!-- Search bar -->
+							<form class="d-flex">
+								<input class="form-control" type="search" placeholder="Search" aria-label="Search">
+								<button class="btn btn-light mx-2" type="submit">Search</button>
+							</form>
+	
+                        </ul>
+                </div>
+			</div>	
+        </nav>
+    </header>
+	<!-- Name in h1 tag -->
+    <h1 class="text-primary text-center my-2">Esta Cimo</h1>
+	
+	<!-- Scrollspy -->
+	<nav id="#navbar-scrollspy" class="navbar">
+        <a class="navbar-brand text-primary mx-3" href="#">About Us</a>
+        <ul class="nav nav-pills">
+            <li class="nav-item">
+                <a class="nav-link" href="#scrollspyHeading1">Our Story</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#scrollspyHeading2">Our Goal</a>
+            </li>
+        </ul>
+    </nav>
+	
+	<div data-bs-spy="scroll" data-bs-target="#navbar-scrollspy" data-bs-smooth-scroll="true" data-bs-root-margin="0px 0px -40%" class="scrollspy-example bg-light p-3 rounded-2" tabindex="0">
+		<div id="scrollspyHeading1">
+		 <h4>Our Story</h4>
+		 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse pretium vulputate risus, non fermentum nibh semper eu. Donec erat elit, gravida sed congue molestie, vestibulum eu ligula. Fusce ac neque id felis rutrum euismod. Nulla at libero ac lectus efficitur viverra. Integer eget sem placerat, rutrum lectus sed, sollicitudin mauris. In consectetur libero sed dolor dignissim, feugiat placerat lectus varius. Praesent ac vestibulum diam. In dui lacus, luctus et efficitur eu, porttitor quis mauris. Donec auctor condimentum mi, nec scelerisque lacus lacinia a. Pellentesque tristique, mauris porttitor euismod feugiat, tortor justo rhoncus arcu, quis fringilla risus magna ut elit.</p>
+		</div>
+		
+		<div id="scrollspyHeading2">
+		 <h4>Our Goal</h4>
+		 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse pretium vulputate risus, non fermentum nibh semper eu. Donec erat elit, gravida sed congue molestie, vestibulum eu ligula. Fusce ac neque id felis rutrum euismod. Nulla at libero ac lectus efficitur viverra. Integer eget sem placerat, rutrum lectus sed, sollicitudin mauris. In consectetur libero sed dolor dignissim, feugiat placerat lectus varius. Praesent ac vestibulum diam. In dui lacus, luctus et efficitur eu, porttitor quis mauris. Donec auctor condimentum mi, nec scelerisque lacus lacinia a. Pellentesque tristique, mauris porttitor euismod feugiat, tortor justo rhoncus arcu, quis fringilla risus magna ut elit.</p>
+		</div>
+    <div>
+	
+	<!-- Product cards -->
+	 <div class="card mr-2 mt-2 d-inline-block" style="width: 18rem;">
+        <img src="product1.jpg" class="card-img-top" alt="Black Puffer Jacket">
+        <div class="card-body">
+         <h5 class="card-title">Puffer Jacket</h5>
+         <p class="card-text">$54.99</p>
+         <a href="#" class="btn btn-primary">Add to cart</a>
+        </div>
+     </div>
+    
+	 <div class="card mr-2 mt-2 d-inline-block" style="width: 18rem;">
+        <img src="product3.jpg" class="card-img-top" alt="White Button Up Shirt">
+        <div class="card-body">
+         <h5 class="card-title">White Shirt</h5>
+         <p class="card-text">$17.99</p>
+         <a href="#" class="btn btn-primary">Add to cart</a>
+        </div>
+     </div>
+	 
+	 <div class="card mr-2 mt-2 d-inline-block" style="width: 18rem;">
+        <img src="product2.jpg" class="card-img-top" alt="Grey Hoodie">
+        <div class="card-body">
+         <h5 class="card-title">Hoodie</h5>
+         <p class="card-text">$28.99</p>
+         <a href="#" class="btn btn-primary">Add to cart</a>
+        </div>
+     </div>
+	
+	 <div class="card mr-2 mt-2 d-inline-block" style="width: 18rem;">
+        <img src="product4.jpg" class="card-img-top" alt="Socks">
+        <div class="card-body">
+         <h5 class="card-title">Socks</h5>
+         <p class="card-text">$4.99</p>
+         <a href="#" class="btn btn-primary">Add to cart</a>
+        </div>
+     </div>
+	
+	 <div class="card mr-2 mt-2 d-inline-block" style="width: 18rem;">
+        <img src="product5.jpg" class="card-img-top" alt="Leggings">
+        <div class="card-body">
+         <h5 class="card-title">Leggings</h5>
+         <p class="card-text">$19.99</p>
+         <a href="#" class="btn btn-primary">Add to cart</a>
+        </div>
+     </div>
+	 
+	 <div class="card mr-2 mt-2 d-inline-block" style="width: 18rem;">
+        <img src="product6.jpg" class="card-img-top" alt="Black shorts">
+        <div class="card-body">
+         <h5 class="card-title">Shorts</h5>
+         <p class="card-text">$25.99</p>
+         <a href="#" class="btn btn-primary">Add to cart</a>
+        </div>
+	 </div>
+ </body>
+</html>
+ 
